@@ -3,9 +3,17 @@ def main():
     number = number_input()
 
 def guess_number(number):
-    guess = False
-    while not guess:
-        if answer = "higher":
+    isGuess = False
+    while not isGuess:
+        guess = 50
+        print("Is your number", guess, "?")
+        response = input()
+
+        if response == "yes":
+            isGuess = True
+        elif response == "lower":
+            guess = guess/2
+        elif response == "higher":
             guess = guess + 1
     return number
 def number_input():
